@@ -12,6 +12,8 @@ It was made using [vue-maplibre-gl](https://indoorequal.github.io/vue-maplibre-g
 
 This module is really just about making it work with Nuxt without the need to configure anything.
 
+This fork has been updated to Nuxt v4 and modified slightly, removing the auto import for MapLibre's CSS (to facilitate custom css and lazy loading).
+
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 - [📖 &nbsp;Documentation](https://gugustinette.github.io/nuxt-maplibre)
 

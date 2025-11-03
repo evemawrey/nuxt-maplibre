@@ -50,18 +50,15 @@ export const composables = [
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-maplibre',
+    name: '@evemawrey/nuxt-maplibre',
     configKey: 'maplibre',
     compatibility: {
-      nuxt: '>=3.0.0',
+      nuxt: '>=4.0.0',
     },
   },
   // Default configuration options of the Nuxt module
   defaults: {},
-  async setup(options, nuxt) {
-    // Add MapLibre's CSS
-    nuxt.options.css.push('maplibre-gl/dist/maplibre-gl.css')
-
+  async setup() {
     // Auto-import vue-maplibre-gl components
     for (const component of components) {
       addComponent({
